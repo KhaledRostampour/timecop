@@ -64,6 +64,7 @@ class _TopBarState extends State<TopBar> {
     return Form(
       key: _searchFormKey,
       child: TextFormField(
+        style: TextStyle(color: Colors.white),
         controller: _searchController,
         onChanged: (search) {
           bloc.add(SearchChangedEvent(search));
